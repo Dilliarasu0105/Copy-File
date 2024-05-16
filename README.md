@@ -23,18 +23,15 @@ End the program.
 #Developed by: Dilliarasu M
 #Register Number: 212223230049
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+with open("text1.txt", 'r') as fp:
+    msg=fp.read()
+with open("copy.txt", 'w') as fp1:
+    fp1.write(msg)
+
 ```
 ### OUTPUT:
 
-![image](https://github.com/Dilliarasu0105/Copy-File/assets/144979593/2bb3cac7-3e35-4aab-9d15-9fffc7632e91)
-
-
+![image](https://github.com/Dilliarasu0105/Copy-File/assets/144979368/13c6806a-3b99-488a-b70d-b065392cdd53)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
